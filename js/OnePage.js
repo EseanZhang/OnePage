@@ -1,9 +1,15 @@
- 
-var viewWidth=1080;
-var viewHeight=1920;
 
- reSizeItem=function(){
-    if(innerWidth>innerHeight){
+var onePage={
+    fullScream:"",
+    viewWidth:"1080",
+    viewHeight:"1920",
+    minAspectRatio:1.4,
+    loop:true,
+
+}
+
+reSizeItem=function(){
+    if(innerHeight/innerWidth<onePage.minAspectRatio){
         $(".item").css({
             width:"100vw",
             height:(viewHeight/viewWidth*100)+"vw"
