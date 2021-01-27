@@ -5,8 +5,12 @@ var onePage = {
     viewHeight: "1920",
     autoScale: false,
     minAspectRatio: 1.4,
-    loop: true,
+    loop: false,
 }
+onePage.init=function(){
+
+}
+
 
 reSizeItem = function () {
     if (autoScale) {
